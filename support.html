@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Best Dishes — Support</title>
+  <meta name="description" content="Support for Best Dishes app. Contact, FAQs, and troubleshooting." />
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#60a5fa; }
+    *{ box-sizing: border-box; }
+    body{ margin:0; font-family:-apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--text); }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    header{ display:flex; align-items:center; justify-content:space-between; padding:16px 20px; max-width:1100px; margin:0 auto; }
+    .brand{ font-weight:700; }
+    nav a{ margin-left:16px; color:var(--muted); }
+    main{ max-width:900px; margin:24px auto; padding:0 20px; }
+    h1{ margin:8px 0 12px; font-size:32px; }
+    h2{ margin:24px 0 10px; font-size:22px; }
+    p, li{ color:var(--muted); }
+    .card{ background:var(--card); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:20px; margin:16px 0; }
+    .footer{ border-top:1px solid rgba(255,255,255,0.08); margin-top:36px; }
+    .footer-inner{ max-width:1100px; margin:0 auto; padding:16px 20px; display:flex; justify-content:space-between; gap:16px; color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/Website/index.html" style="color:inherit; text-decoration:none">Best Dishes</a></div>
+    <nav>
+      <a href="/Website/index.html">Home</a>
+      <a href="/Website/privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Support</h1>
+    <p>We’re here to help. If you’re experiencing an issue or have a question about Best Dishes, start with the FAQs below or reach out directly.</p>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:bestdishesnearme@gmail.com">bestdishesnearme@gmail.com</a></p>
+      <p>We aim to respond within 2 business days.</p>
+    </div>
+
+    <div class="card">
+      <h2>FAQs</h2>
+      <h3>Do I need to enable location?</h3>
+      <p>No. You can browse top‑ranked dishes worldwide without granting location access. Enable location to see nearby results.</p>
+
+      <h3>Why don’t I see any dishes nearby?</h3>
+      <p>Try increasing the distance filter or switch to worldwide mode. Network connectivity can also affect results.</p>
+
+      <h3>Are my photos or reviews public?</h3>
+      <p>In future updates, you may be able to contribute reviews and photos. Contributions are stored in iCloud (CloudKit). See our <a href="/Website/privacy.html">Privacy Policy</a> for details.</p>
+    </div>
+
+    <div class="card">
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>Ensure you have an internet connection.</li>
+        <li>If location results are missing, check Settings → Privacy → Location Services.</li>
+        <li>Close and reopen the app to refresh content.</li>
+        <li>Make sure you’re on the latest version of Best Dishes.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Best Dishes</div>
+      <div>
+        <a href="/Website/index.html">Home</a> ·
+        <a href="/Website/privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Best Dishes — Discover Top‑Rated Dishes Nearby</title>
+  <meta name="description" content="Discover the best dishes around you. Browse ratings, photos, and reviews — filter by distance or explore worldwide. No account required." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; max-width: 1100px; margin: 0 auto; }
+    .brand { font-weight: 700; letter-spacing: 0.2px; }
+    nav a { margin-left: 16px; color: var(--muted); }
+    .hero { max-width: 1100px; margin: 32px auto; padding: 24px 20px; display: grid; grid-template-columns: 1.1fr; gap: 24px; }
+    .hero-card { background: linear-gradient(180deg, rgba(17,24,39,0.9), rgba(17,24,39,0.6)); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 28px; }
+    .hero h1 { margin: 0 0 12px; font-size: 40px; line-height: 1.1; letter-spacing: -0.5px; }
+    .hero p.lead { margin: 0 0 20px; color: var(--muted); font-size: 18px; }
+    .cta { display: inline-flex; align-items: center; gap: 10px; background: #2563eb; color: white; padding: 12px 16px; border-radius: 10px; font-weight: 600; }
+    .cta:hover { filter: brightness(1.05); text-decoration: none; }
+
+    .section { max-width: 1100px; margin: 24px auto; padding: 0 20px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { background: var(--card); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 20px; }
+    h2 { margin: 0 0 12px; font-size: 26px; }
+    h3 { margin: 0 0 8px; font-size: 18px; }
+    p { color: var(--muted); margin: 0; }
+
+    .footer { border-top: 1px solid rgba(255,255,255,0.08); margin-top: 36px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; padding: 16px 20px; display: flex; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 14px; }
+
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Best Dishes</div>
+    <nav>
+      <a href="/Website/support.html">Support</a>
+      <a href="/Website/privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Discover top‑rated dishes near you</h1>
+        <p class="lead">Browse ratings, photos, and reviews. Filter by distance or explore worldwide. No account required.</p>
+        <a class="cta" href="#appstore">Download on the App Store</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why Best Dishes</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Nearby discovery</h3>
+          <p>See the highest‑rated dishes around you, ranked and easy to scan.</p>
+        </div>
+        <div class="card">
+          <h3>Distance filter</h3>
+          <p>Quickly switch between 5, 10, 15, 25, 50 miles — or go worldwide.</p>
+        </div>
+        <div class="card">
+          <h3>Rich details</h3>
+          <p>Ratings, review counts, and photos help you pick a winner fast.</p>
+        </div>
+        <div class="card">
+          <h3>No account required</h3>
+          <p>Open the app and start browsing immediately — simple and private.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>How it works</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1. Open</h3>
+          <p>Launch the app to see top‑ranked dishes nearby.</p>
+        </div>
+        <div class="card">
+          <h3>2. Filter</h3>
+          <p>Adjust distance or switch to worldwide mode in one tap.</p>
+        </div>
+        <div class="card">
+          <h3>3. Explore</h3>
+          <p>Tap a dish for ratings, photos, and reviews.</p>
+        </div>
+        <div class="card">
+          <h3>4. Enjoy</h3>
+          <p>Spend less time searching and more time enjoying great food.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Best Dishes</div>
+      <div>
+        <a href="/Website/support.html">Support</a> ·
+        <a href="/Website/privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Best Dishes — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Best Dishes app." />
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#60a5fa; }
+    *{ box-sizing: border-box; }
+    body{ margin:0; font-family:-apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--text); }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    header{ display:flex; align-items:center; justify-content:space-between; padding:16px 20px; max-width:1100px; margin:0 auto; }
+    .brand{ font-weight:700; }
+    nav a{ margin-left:16px; color:var(--muted); }
+    main{ max-width:900px; margin:24px auto; padding:0 20px; }
+    h1{ margin:8px 0 12px; font-size:32px; }
+    h2{ margin:24px 0 10px; font-size:22px; }
+    p, li{ color:var(--muted); }
+    .card{ background:var(--card); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:20px; margin:16px 0; }
+    .footer{ border-top:1px solid rgba(255,255,255,0.08); margin-top:36px; }
+    .footer-inner{ max-width:1100px; margin:0 auto; padding:16px 20px; display:flex; justify-content:space-between; gap:16px; color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/Website/index.html" style="color:inherit; text-decoration:none">Best Dishes</a></div>
+    <nav>
+      <a href="/Website/index.html">Home</a>
+      <a href="/Website/support.html">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: <span id="last-updated"></span></p>
+
+    <div class="card">
+      <h2>Overview</h2>
+      <p>Best Dishes is designed to help you discover top‑rated dishes nearby or worldwide while respecting your privacy. This policy explains what information we collect, how we use it, and your choices.</p>
+    </div>
+
+    <div class="card">
+      <h2>Information We Collect</h2>
+      <ul>
+        <li><strong>Location (optional):</strong> If you grant permission, we use your approximate device location to show dishes near you. You can disable this in Settings and still browse worldwide.</li>
+        <li><strong>App Usage:</strong> We may collect basic, aggregated analytics (e.g., feature usage, performance) to improve the app. No third‑party tracking is used.</li>
+        <li><strong>User Content (future updates):</strong> If you choose to contribute reviews or photos in future versions, that content will be stored securely in iCloud (CloudKit).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>Provide core functionality (e.g., location‑based results).</li>
+        <li>Improve performance and reliability.</li>
+        <li>Support customer service and troubleshooting.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Data Sharing</h2>
+      <p>We do not sell your personal data. We do not share personal data with third‑party advertisers. When enabled, user content is stored in Apple’s iCloud (CloudKit) and may be publicly visible within the app.</p>
+    </div>
+
+    <div class="card">
+      <h2>Your Choices</h2>
+      <ul>
+        <li>You can disable location access at any time in iOS Settings.</li>
+        <li>You can use the app without creating an account.</li>
+        <li>When contribution features are available, you may be able to delete your content and/or account in‑app.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>If you have questions about this policy, contact us at <a href="mailto:bestdishesnearme@gmail.com">bestdishesnearme@gmail.com</a>.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Best Dishes</div>
+      <div>
+        <a href="/Website/index.html">Home</a> ·
+        <a href="/Website/support.html">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const now = new Date();
+    document.getElementById('year').textContent = now.getFullYear();
+    document.getElementById('last-updated').textContent = now.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+  </script>
+</body>
+</html>
